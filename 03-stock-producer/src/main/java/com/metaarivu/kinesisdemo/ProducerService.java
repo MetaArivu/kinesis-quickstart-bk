@@ -17,7 +17,7 @@ public class ProducerService {
 	@Scheduled(fixedRate = 5000L)
 	public void sendMessage() {
 		StockService.getInstance().currentPrice().forEach(stock -> {
-			String msg = stock.toJSON();
+			String msg = stock.toCSV();
 			boolean flag = source.output().send(MessageBuilder.withPayload(msg).build());
 			System.out.println("Produced Msg=" + msg + ", Status=" + flag);
 		});

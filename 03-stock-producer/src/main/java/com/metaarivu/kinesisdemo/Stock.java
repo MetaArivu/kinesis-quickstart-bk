@@ -45,5 +45,9 @@ public class Stock {
 			return null;
 		}
 	}
+	
+	public String toCSV() {
+		return id+"|"+companyCode+"|"+price+"|"+dateTime;
+	}
 
 }
