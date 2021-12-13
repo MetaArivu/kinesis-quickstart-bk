@@ -12,6 +12,7 @@
 		<module>01-kinesis-producer</module>
 		<module>02-kinesis-consumer</module>
 		<module>03-stock-producer</module>
+		<module>04-stock-lambda-enhancer</module>
 	</modules>
 
 	<name>kinesis-quickstart</name>
