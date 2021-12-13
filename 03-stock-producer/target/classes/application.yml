@@ -1,0 +1,18 @@
+
+spring:
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: metaarivustockprooducer
+          content-type: text/plain
+
+cloud:
+  aws:
+    credentials:
+      accessKey: AKIA44JJ3DZVGXZ3AQGF
+      secretKey: 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
+    region:
+      static: ap-south-1
+    stack:
+      auto: false

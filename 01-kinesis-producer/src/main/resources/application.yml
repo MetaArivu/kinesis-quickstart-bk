@@ -1,0 +1,18 @@
+
+spring:
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: metaarivudemotestw
+          content-type: text/plain
+
+cloud:
+  aws:
+    credentials:
+      accessKey: 1111
+      secretKey: 22222s
+    region:
+      static: ap-south-1
+    stack:
+      auto: false
